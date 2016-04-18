@@ -197,8 +197,8 @@ gulp.task('update', function(cb) {
 // For a new stack (or you change cloudformation.json)
 gulp.task('default', function(cb) {
 	return runSequence(
-		'build-upload',
-		'deployStack',
+		'build-upload'
+		//'deployStack',
 		cb
 	);
 });
